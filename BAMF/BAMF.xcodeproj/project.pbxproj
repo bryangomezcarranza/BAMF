@@ -37,6 +37,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57343C0F26EFAE79002AD78E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5BB7262F26EFA8E9003C997E /* AppDelegate.swift */,
+				5BB7263126EFA8EA003C997E /* SceneDelegate.swift */,
+				5BB7263826EFA8ED003C997E /* Assets.xcassets */,
+				5BB7263D26EFA8ED003C997E /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		57343C1026EFAEDB002AD78E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		57343C1126EFAEF0002AD78E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				57343C1326EFAF06002AD78E /* Model Controllers */,
+				57343C1226EFAEFD002AD78E /* View Controllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		57343C1226EFAEFD002AD78E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5BB7263326EFA8EA003C997E /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		57343C1326EFAF06002AD78E /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		57343C1426EFAF16002AD78E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				57343C1526EFAF1B002AD78E /* Storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		57343C1526EFAF1B002AD78E /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5BB7263526EFA8EA003C997E /* Main.storyboard */,
+				5BB7263A26EFA8ED003C997E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		5BB7262326EFA8E9003C997E = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +115,10 @@
 		5BB7262E26EFA8E9003C997E /* BAMF */ = {
 			isa = PBXGroup;
 			children = (
-				5BB7262F26EFA8E9003C997E /* AppDelegate.swift */,
-				5BB7263126EFA8EA003C997E /* SceneDelegate.swift */,
-				5BB7263326EFA8EA003C997E /* ViewController.swift */,
-				5BB7263526EFA8EA003C997E /* Main.storyboard */,
-				5BB7263826EFA8ED003C997E /* Assets.xcassets */,
-				5BB7263A26EFA8ED003C997E /* LaunchScreen.storyboard */,
-				5BB7263D26EFA8ED003C997E /* Info.plist */,
+				57343C1026EFAEDB002AD78E /* Model */,
+				57343C1126EFAEF0002AD78E /* Controllers */,
+				57343C1426EFAF16002AD78E /* Views */,
+				57343C0F26EFAE79002AD78E /* Resources */,
 			);
 			path = BAMF;
 			sourceTree = "<group>";
@@ -287,8 +343,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D5YK8XAHMK;
-				INFOPLIST_FILE = BAMF/Info.plist;
+				DEVELOPMENT_TEAM = SB3Q7W7XN7;
+				INFOPLIST_FILE = BAMF/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,8 +362,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D5YK8XAHMK;
-				INFOPLIST_FILE = BAMF/Info.plist;
+				DEVELOPMENT_TEAM = SB3Q7W7XN7;
+				INFOPLIST_FILE = BAMF/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
