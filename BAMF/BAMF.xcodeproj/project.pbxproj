@@ -13,6 +13,7 @@
 		5BB7263726EFA8EA003C997E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BB7263526EFA8EA003C997E /* Main.storyboard */; };
 		5BB7263926EFA8ED003C997E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BB7263826EFA8ED003C997E /* Assets.xcassets */; };
 		5BB7263C26EFA8ED003C997E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BB7263A26EFA8ED003C997E /* LaunchScreen.storyboard */; };
+		5BB7264A26EFB506003C997E /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB7264926EFB506003C997E /* Member.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5BB7263826EFA8ED003C997E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BB7263B26EFA8ED003C997E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BB7263D26EFA8ED003C997E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BB7264926EFB506003C997E /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,13 +48,6 @@
 				5BB7263D26EFA8ED003C997E /* Info.plist */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		57343C1026EFAEDB002AD78E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		57343C1126EFAEF0002AD78E /* Controllers */ = {
@@ -115,12 +110,20 @@
 		5BB7262E26EFA8E9003C997E /* BAMF */ = {
 			isa = PBXGroup;
 			children = (
-				57343C1026EFAEDB002AD78E /* Model */,
+				5BB7264826EFB4F6003C997E /* Model */,
 				57343C1126EFAEF0002AD78E /* Controllers */,
 				57343C1426EFAF16002AD78E /* Views */,
 				57343C0F26EFAE79002AD78E /* Resources */,
 			);
 			path = BAMF;
+			sourceTree = "<group>";
+		};
+		5BB7264826EFB4F6003C997E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5BB7264926EFB506003C997E /* Member.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +199,7 @@
 				5BB7263426EFA8EA003C997E /* ViewController.swift in Sources */,
 				5BB7263026EFA8E9003C997E /* AppDelegate.swift in Sources */,
 				5BB7263226EFA8EA003C997E /* SceneDelegate.swift in Sources */,
+				5BB7264A26EFB506003C997E /* Member.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
