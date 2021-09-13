@@ -22,26 +22,35 @@ class TheTeamsTableViewController: UITableViewController {
 
     }
     
-    //MARK: - Properties
-
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        tableView.reloadData()
     }
+    
+    //MARK: - Properties
+    
+    var member: Member
+    
+    //MARK: - Methods
+    
+    
+    // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return MemberController.members.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "memberCell", for: indexPath)
 
-        // Configure the cell...
-
+        let members = MemberController.members[indexPath.row]
+        
+        memberName.text = member.name
+        memberBio.text = member.bio
+        membersSkillz.text = member.funFact
+        
         return cell
     }
 }
