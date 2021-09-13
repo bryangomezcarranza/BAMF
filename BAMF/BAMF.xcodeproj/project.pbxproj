@@ -9,25 +9,32 @@
 /* Begin PBXBuildFile section */
 		5BB7263026EFA8E9003C997E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB7262F26EFA8E9003C997E /* AppDelegate.swift */; };
 		5BB7263226EFA8EA003C997E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB7263126EFA8EA003C997E /* SceneDelegate.swift */; };
-		5BB7263426EFA8EA003C997E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB7263326EFA8EA003C997E /* ViewController.swift */; };
 		5BB7263726EFA8EA003C997E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BB7263526EFA8EA003C997E /* Main.storyboard */; };
 		5BB7263926EFA8ED003C997E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BB7263826EFA8ED003C997E /* Assets.xcassets */; };
 		5BB7263C26EFA8ED003C997E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BB7263A26EFA8ED003C997E /* LaunchScreen.storyboard */; };
+
 		5BB7264A26EFB506003C997E /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB7264926EFB506003C997E /* Member.swift */; };
 		5BB7264D26EFB91D003C997E /* MemberController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB7264C26EFB91D003C997E /* MemberController.swift */; };
+
+
+		769282AF26EFB73E003B7EF0 /* TheTeamsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769282AE26EFB73E003B7EF0 /* TheTeamsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5BB7262C26EFA8E9003C997E /* BAMF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BAMF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BB7262F26EFA8E9003C997E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BB7263126EFA8EA003C997E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5BB7263326EFA8EA003C997E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5BB7263626EFA8EA003C997E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5BB7263826EFA8ED003C997E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BB7263B26EFA8ED003C997E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BB7263D26EFA8ED003C997E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+
 		5BB7264926EFB506003C997E /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
 		5BB7264C26EFB91D003C997E /* MemberController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberController.swift; sourceTree = "<group>"; };
+
+		769282AE26EFB73E003B7EF0 /* TheTeamsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheTeamsTableViewController.swift; sourceTree = "<group>"; };
+
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +71,7 @@
 		57343C1226EFAEFD002AD78E /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				5BB7263326EFA8EA003C997E /* ViewController.swift */,
+				769282AE26EFB73E003B7EF0 /* TheTeamsTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -199,9 +206,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BB7263426EFA8EA003C997E /* ViewController.swift in Sources */,
 				5BB7263026EFA8E9003C997E /* AppDelegate.swift in Sources */,
+
 				5BB7264D26EFB91D003C997E /* MemberController.swift in Sources */,
+
+				769282AF26EFB73E003B7EF0 /* TheTeamsTableViewController.swift in Sources */,
+
 				5BB7263226EFA8EA003C997E /* SceneDelegate.swift in Sources */,
 				5BB7264A26EFB506003C997E /* Member.swift in Sources */,
 			);
@@ -351,7 +361,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SB3Q7W7XN7;
+				DEVELOPMENT_TEAM = 5WNX3PT9K4;
 				INFOPLIST_FILE = BAMF/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -370,7 +380,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SB3Q7W7XN7;
+				DEVELOPMENT_TEAM = 5WNX3PT9K4;
 				INFOPLIST_FILE = BAMF/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
