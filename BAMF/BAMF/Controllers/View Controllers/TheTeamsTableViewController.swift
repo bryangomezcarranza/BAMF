@@ -9,12 +9,6 @@ import UIKit
 
 class TheTeamsTableViewController: UITableViewController {
     
-    //MARK: - Outlets
-
-    @IBOutlet weak var memberName: UILabel!
-    @IBOutlet weak var memberBio: UILabel!
-    @IBOutlet weak var membersSkillz: UILabel!
-    
     
     //MARK: - Life cycle
     override func viewDidLoad() {
@@ -26,30 +20,26 @@ class TheTeamsTableViewController: UITableViewController {
         super.viewWillAppear(true)
         tableView.reloadData()
     }
-    
-    //MARK: - Properties
-    
-    var member: Member
-    
-    //MARK: - Methods
-    
-    
+   
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return MemberController.members.count
     }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 400
+    }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "memberCell", for: indexPath)
+       guard let cell = tableView.dequeueReusableCell(withIdentifier: "memberCell", for: indexPath) as? MemberTableViewCell else { return UITableViewCell()}
 
-        let members = MemberController.members[indexPath.row]
+        let member = MemberController.members[indexPath.row]
         
-        memberName.text = member.name
-        memberBio.text = member.bio
-        membersSkillz.text = member.funFact
+        cell.member = member
+       
         
         return cell
     }

@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="memberCell" rowHeight="198" id="0nA-xL-VZe">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="memberCell" rowHeight="198" id="0nA-xL-VZe" customClass="MemberTableViewCell" customModule="BAMF" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="24.5" width="414" height="198"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0nA-xL-VZe" id="z3H-jA-DhB">
@@ -35,7 +35,7 @@
                                             <color key="textColor" red="1" green="0.80704276730000002" blue="0.99964003099999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Member's Bio) " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v62-rt-Ckc">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Member's Bio) " lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v62-rt-Ckc">
                                             <rect key="frame" x="62" y="79" width="290" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="1" green="0.80704276730000002" blue="0.99964003099999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -47,8 +47,8 @@
                                             <color key="textColor" red="1" green="0.80704276730000002" blue="0.99964003099999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Member's Weird Skillz)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPB-ox-yHv">
-                                            <rect key="frame" x="62" y="138.5" width="290" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Member's Weird Skillz)" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPB-ox-yHv">
+                                            <rect key="frame" x="62" y="138.5" width="290" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="1" green="0.80704276730000002" blue="0.99964003099999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
@@ -71,7 +71,12 @@
                                         <constraint firstItem="fPB-ox-yHv" firstAttribute="width" secondItem="z3H-jA-DhB" secondAttribute="width" multiplier="0.7" id="tYd-xf-rno"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="memberBio" destination="v62-rt-Ckc" id="ovG-IH-MGQ"/>
+                                    <outlet property="memberNameLabel" destination="9L7-mr-TWw" id="CjM-gY-RT3"/>
+                                    <outlet property="memberSkill" destination="fPB-ox-yHv" id="jrE-gS-YrR"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -79,11 +84,6 @@
                             <outlet property="delegate" destination="tPZ-wg-meE" id="c4a-fp-eFC"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="memberBio" destination="v62-rt-Ckc" id="FiZ-yj-uku"/>
-                        <outlet property="memberName" destination="9L7-mr-TWw" id="Aau-hr-5OC"/>
-                        <outlet property="membersSkillz" destination="fPB-ox-yHv" id="9fd-Lt-Efg"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pjp-QT-AHS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -91,9 +91,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
