@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tPZ-wg-meE">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18122"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--The Teams Table View Controller-->
+        <scene sceneID="P2i-tb-Bmp">
+            <objects>
+                <tableViewController id="tPZ-wg-meE" customClass="TheTeamsTableViewController" customModule="BAMF" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="thV-ci-uTR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="198" id="0nA-xL-VZe">
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="198"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0nA-xL-VZe" id="z3H-jA-DhB">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="198"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Team Member Name)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9L7-mr-TWw">
+                                            <rect key="frame" x="41.5" y="10" width="331" height="30"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                            <color key="textColor" red="1" green="0.80704276726553437" blue="0.9996400310060245" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDg-h8-v3o">
+                                            <rect key="frame" x="41.5" y="50" width="331" height="24"/>
+                                            <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                            <color key="textColor" red="1" green="0.80704276730000002" blue="0.99964003099999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Member's Bio) " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v62-rt-Ckc">
+                                            <rect key="frame" x="62" y="79" width="290" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="1" green="0.80704276730000002" blue="0.99964003099999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weird Skillz..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGo-10-EHP">
+                                            <rect key="frame" x="148" y="109.5" width="118" height="24"/>
+                                            <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                            <color key="textColor" red="1" green="0.80704276730000002" blue="0.99964003099999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Member's Weird Skillz)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPB-ox-yHv">
+                                            <rect key="frame" x="62" y="138.5" width="290" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="1" green="0.80704276730000002" blue="0.99964003099999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="iDg-h8-v3o" firstAttribute="top" secondItem="9L7-mr-TWw" secondAttribute="bottom" constant="10" id="3Cq-x1-72K"/>
+                                        <constraint firstItem="fPB-ox-yHv" firstAttribute="centerX" secondItem="z3H-jA-DhB" secondAttribute="centerX" id="7nB-bB-BOc"/>
+                                        <constraint firstItem="DGo-10-EHP" firstAttribute="top" secondItem="v62-rt-Ckc" secondAttribute="bottom" constant="10" id="Dbb-6W-G9k"/>
+                                        <constraint firstItem="v62-rt-Ckc" firstAttribute="width" secondItem="z3H-jA-DhB" secondAttribute="width" multiplier="0.7" id="GDi-RF-fpt"/>
+                                        <constraint firstItem="iDg-h8-v3o" firstAttribute="centerX" secondItem="z3H-jA-DhB" secondAttribute="centerX" id="Jch-oq-HTk"/>
+                                        <constraint firstItem="9L7-mr-TWw" firstAttribute="centerX" secondItem="z3H-jA-DhB" secondAttribute="centerX" id="QRm-lk-9XX"/>
+                                        <constraint firstItem="fPB-ox-yHv" firstAttribute="top" secondItem="DGo-10-EHP" secondAttribute="bottom" constant="5" id="RIZ-Mz-nBz"/>
+                                        <constraint firstItem="DGo-10-EHP" firstAttribute="centerX" secondItem="z3H-jA-DhB" secondAttribute="centerX" id="Xdc-yG-so7"/>
+                                        <constraint firstItem="iDg-h8-v3o" firstAttribute="width" secondItem="z3H-jA-DhB" secondAttribute="width" multiplier="0.8" id="ZHo-nH-SXv"/>
+                                        <constraint firstItem="9L7-mr-TWw" firstAttribute="width" secondItem="z3H-jA-DhB" secondAttribute="width" multiplier="0.8" id="bf8-Ae-ELS"/>
+                                        <constraint firstItem="9L7-mr-TWw" firstAttribute="top" secondItem="z3H-jA-DhB" secondAttribute="top" constant="10" id="iE6-nr-meN"/>
+                                        <constraint firstItem="v62-rt-Ckc" firstAttribute="centerX" secondItem="z3H-jA-DhB" secondAttribute="centerX" id="iiI-yN-4KX"/>
+                                        <constraint firstItem="v62-rt-Ckc" firstAttribute="top" secondItem="iDg-h8-v3o" secondAttribute="bottom" constant="5" id="jxC-6c-iaG"/>
+                                        <constraint firstItem="fPB-ox-yHv" firstAttribute="width" secondItem="z3H-jA-DhB" secondAttribute="width" multiplier="0.7" id="tYd-xf-rno"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="tPZ-wg-meE" id="Hmi-oZ-D3Q"/>
+                            <outlet property="delegate" destination="tPZ-wg-meE" id="c4a-fp-eFC"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="memberBio" destination="v62-rt-Ckc" id="FiZ-yj-uku"/>
+                        <outlet property="memberName" destination="9L7-mr-TWw" id="Aau-hr-5OC"/>
+                        <outlet property="membersSkillz" destination="fPB-ox-yHv" id="9fd-Lt-Efg"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pjp-QT-AHS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="184.05797101449278" y="121.875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
