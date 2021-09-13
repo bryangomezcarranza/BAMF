@@ -13,8 +13,9 @@
 		5BB7263926EFA8ED003C997E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BB7263826EFA8ED003C997E /* Assets.xcassets */; };
 		5BB7263C26EFA8ED003C997E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BB7263A26EFA8ED003C997E /* LaunchScreen.storyboard */; };
 
-		5BB7264A26EFB506003C997E /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB7264926EFB506003C997E /* Member.swift */; };
-		5BB7264D26EFB91D003C997E /* MemberController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB7264C26EFB91D003C997E /* MemberController.swift */; };
+		5BB7264F26EFC167003C997E /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB7264E26EFC167003C997E /* Member.swift */; };
+		5BB7265326EFC19F003C997E /* MemberController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB7265226EFC19F003C997E /* MemberController.swift */; };
+
 
 
 		769282AF26EFB73E003B7EF0 /* TheTeamsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769282AE26EFB73E003B7EF0 /* TheTeamsTableViewController.swift */; };
@@ -29,11 +30,9 @@
 		5BB7263B26EFA8ED003C997E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BB7263D26EFA8ED003C997E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 
-		5BB7264926EFB506003C997E /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
-		5BB7264C26EFB91D003C997E /* MemberController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberController.swift; sourceTree = "<group>"; };
-
+		5BB7264E26EFC167003C997E /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
+		5BB7265226EFC19F003C997E /* MemberController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberController.swift; sourceTree = "<group>"; };
 		769282AE26EFB73E003B7EF0 /* TheTeamsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheTeamsTableViewController.swift; sourceTree = "<group>"; };
-
 
 /* End PBXFileReference section */
 
@@ -62,7 +61,9 @@
 		57343C1126EFAEF0002AD78E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				5BB7264B26EFB909003C997E /* Model Controllers */,
+
+				5BB7265126EFC18C003C997E /* Model Controller */,
+
 				57343C1226EFAEFD002AD78E /* View Controllers */,
 			);
 			path = Controllers;
@@ -123,17 +124,20 @@
 		5BB7264826EFB4F6003C997E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5BB7264926EFB506003C997E /* Member.swift */,
+				5BB7264E26EFC167003C997E /* Member.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		5BB7264B26EFB909003C997E /* Model Controllers */ = {
+
+		5BB7265126EFC18C003C997E /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
-				5BB7264C26EFB91D003C997E /* MemberController.swift */,
+				5BB7265226EFC19F003C997E /* MemberController.swift */,
 			);
-			path = "Model Controllers";
+			path = "Model Controller";
+
+
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +216,12 @@
 
 				769282AF26EFB73E003B7EF0 /* TheTeamsTableViewController.swift in Sources */,
 
+				5BB7265326EFC19F003C997E /* MemberController.swift in Sources */,
+
+
+
 				5BB7263226EFA8EA003C997E /* SceneDelegate.swift in Sources */,
-				5BB7264A26EFB506003C997E /* Member.swift in Sources */,
+				5BB7264F26EFC167003C997E /* Member.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
